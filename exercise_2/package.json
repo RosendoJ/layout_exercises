@@ -1,19 +1,17 @@
 {
-  "name": "exercise_1",
+  "name": "exercise_2",
   "version": "1.0.0",
-  "description": "Master Layout ejercicio 1",
+  "description": "Master Layout ejercicio 2",
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Rosendo Jiménez",
+  "author": "Rosenso Jiménez",
   "license": "ISC",
-  "dependencies": {
-    "parcel": "^1.12.4"
-  },
   "devDependencies": {
+    "parcel": "^1.12.4",
     "sass": "^1.26.3"
   }
 }

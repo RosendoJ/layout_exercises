@@ -1,0 +1,60 @@
+@import "tema_1";
+
+body {
+    font: {
+        family: Verdana;
+        size: 20px;
+    }
+}
+
+.container {
+    height: 600px;
+    width: 200px;
+    margin: {
+        left: 50px;
+        top: 50px;
+    }
+    display: grid;   
+}
+
+.box {
+    height: 120px;
+    width: 150px;
+    padding-top: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid lightslategray;
+}
+
+.nobox {
+    height: 50px;
+    padding-top: 15px;
+    font-size: 25px;
+}
+
+$color_important: darken($color_base, 20%);
+$color_warning: lighten($color_base, 20%);
+
+.container :nth-child(1) {
+    background-color: $color_base;
+}
+
+.container :nth-child(2) {
+    background-color: $color_important;
+}
+
+.container :nth-child(3) {
+    background-color: $color_warning;
+}
+
+.container :nth-child(4) {
+    font-family: $principal_font;
+}
+
+.container :nth-child(5) {
+    font-family: $secondary_font;
+}
+
+.container :nth-child(6) {
+    box-shadow: -12px 15px 13px 3px rgb(40, 40, 40);
+}
