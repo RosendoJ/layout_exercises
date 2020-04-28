@@ -1,0 +1,62 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.cab {
+    min-width: 100%;
+    font-family: verdana;
+    font-size: 14px;
+    text-align: center;
+    background-color: coral;
+    border: 1px solid cadetblue;
+    display: inline-flex;
+}
+
+.cab div {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cab :first-child {text-align: left}
+.cab :last-child {text-align: right;}
+
+.nav {
+    width: 100%;
+    float: right;   /* Si no añado esta linea aparece una linea en blaco entre cab y nav. No veo el por qué */
+    font-family: verdana;
+    font-size: 10px;
+    display: inline-flex;
+}
+
+.nav div {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid cadetblue;
+    border-right: 1px solid cadetblue;
+    cursor: default;
+}
+
+.nav :last-child {border-right: none}
+
+.nav div:hover {
+    background-color: cadetblue;
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+    .cab :nth-child(2) {display: none;}
+
+    .nav {
+        display: flexbox;   /* No consigo que el pie pase a ser dos lineas cuando el ancho es desbordado */
+        flex-direction: row;
+        position: fixed;
+        bottom: 0px;
+    }
+
+    .nav div {
+        border: 2px solid cadetblue;
+    }
+}
