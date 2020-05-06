@@ -1,6 +1,5 @@
 body {
     display: flex;
-    min-width: 100vh;
     flex-direction: column;
 }
 
@@ -12,29 +11,29 @@ body {
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 50% 50%;
     grid-template-areas:
-        "b-nav bloque1 bloque1"
-        "b-nav bloque2 bloque2";
+        "d-links block1 block1"
+        "d-links block2 block2";
 }
 
-.enlaces {
-    grid-area: b-nav;
+.d-links {
+    grid-area: d-links;
     background-color: lightsalmon;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.enlaces div {
+.d-links div {
     margin: auto;
 }
 
-.bloque-1 {
-    grid-area: bloque1;
+.d-block-1 {
+    grid-area: block1;
     background-color: lime;
 }
 
-.bloque-2 {
-    grid-area: bloque2;
+.d-block-2 {
+    grid-area: block2;
     background-color: mediumseagreen;
 }
 
@@ -44,11 +43,11 @@ body {
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: 20% 50% 50%;
         grid-template-areas: 
-            "b-nav b-nav b-nav"
-            "bloque1 bloque1 bloque1"
-            "bloque2 bloque2 bloque2";
+            "d-links d-links d-links"
+            "block1 block1 block1"
+            "block2 block2 block2";
     }
-    .enlaces {
+    .d-links {
         flex-direction: row;
     }
 }
@@ -57,11 +56,11 @@ body {
     .container {
         grid-template-rows: 5% 50% 50%;
         grid-template-areas: 
-            "b-nav b-nav b-nav"
-            "bloque1 bloque1 bloque1"
-            "bloque2 bloque2 bloque2";
+            "d-links d-links d-links"
+            "block1 block1 block1"
+            "block2 block2 block2";
     }
-    .enlaces {
+    .d-links {
         flex-direction: row;
     }
 }
