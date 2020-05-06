@@ -1,0 +1,30 @@
+@mixin mixins-block($block_color: red) {
+    div1 div:nth-child(1) {background-color: darken($block_color, 40)};
+    div1 div:nth-child(2) {background-color: darken($block_color, 30)};
+    div1 div:nth-child(3) {background-color: darken($block_color, 20)};    
+    div1 div:nth-child(4) {background-color: darken($block_color, 10)};
+    div1 div:nth-child(5) {background-color: darken($block_color, 0)};
+    div2 div:nth-child(1) {background-color: lighten($block_color, 10)};
+    div2 div:nth-child(2) {background-color: lighten($block_color, 20)};
+    div2 div:nth-child(3) {background-color: lighten($block_color, 30)};
+    div2 div:nth-child(4) {background-color: lighten($block_color, 40)};
+}
+
+// No consigo relacionar el 'n' de nth-child con $resultColor parad dejar una sola linea de código. 
+// 'n' no admite variable y tampoco es un valor fuera del (n)
+// Seguro que según avance en el curso encontraré un método sencillo que lo permita, 
+
+    /* @for $indexOfDiv from 1 to 5 {
+        $resultColor: (50-($indexOfDiv * 10));
+        div1 div:nth-child(n) {background-color: darken($block_color, $resultColor)};
+    };
+    @for $indexOfDiv from 1 to 4 {
+        $resultColor: $indexOfDiv * 10;
+        div2 div:nth-of-type(n) {background-color: lighten($block_color, $resultColor)};
+    } */
+
+
+/* div1 div:nth-of-type(n) {background-color: darken($block_color, (n));}   
+}   */ 
+
+  

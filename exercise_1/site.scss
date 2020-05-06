@@ -1,9 +1,11 @@
+@import "_mixins";
+
 body {
     font-family: Verdana, sans-serif;
     color: white;
 }
 
-bloque1, bloque2, bloque3, div1, div2 {
+block1, block2, block3, div1, div2 {
     margin-top: 30px;
     display: flex;
 }
@@ -14,44 +16,16 @@ div {
     text-align: center;
 }
 
-$bloque1_color: red;
-$bloque2_color: green;
-$bloque3_color: blue;
-
-bloque1 {
-    div1 div:nth-child(1) {background-color: darken($bloque1_color, 40)};
-    div1 div:nth-child(2) {background-color: darken($bloque1_color, 30)};
-    div1 div:nth-child(3) {background-color: darken($bloque1_color, 20)};    
-    div1 div:nth-child(4) {background-color: darken($bloque1_color, 10)};
-    div1 div:nth-child(5) {background-color: darken($bloque1_color, 0)};
-    div2 div:nth-child(1) {background-color: lighten($bloque1_color, 10)};
-    div2 div:nth-child(2) {background-color: lighten($bloque1_color, 20)};
-    div2 div:nth-child(3) {background-color: lighten($bloque1_color, 30)};
-    div2 div:nth-child(4) {background-color: lighten($bloque1_color, 40)}
+block1 {
+    @include mixins-block;
 }
 
-bloque2 {
-    div1 div:nth-child(1) {background-color: darken($bloque2_color, 40)};
-    div1 div:nth-child(2) {background-color: darken($bloque2_color, 30)};
-    div1 div:nth-child(3) {background-color: darken($bloque2_color, 20)};    
-    div1 div:nth-child(4) {background-color: darken($bloque2_color, 10)};
-    div1 div:nth-child(5) {background-color: darken($bloque2_color, 0)};
-    div2 div:nth-child(1) {background-color: lighten($bloque2_color, 10)};
-    div2 div:nth-child(2) {background-color: lighten($bloque2_color, 20)};
-    div2 div:nth-child(3) {background-color: lighten($bloque2_color, 30)};
-    div2 div:nth-child(4) {background-color: lighten($bloque2_color, 40)}
+block2 {
+    @include mixins-block($block_color: green);
 }
 
-bloque3 {
-    div1 div:nth-child(1) {background-color: darken($bloque3_color, 40)};
-    div1 div:nth-child(2) {background-color: darken($bloque3_color, 30)};
-    div1 div:nth-child(3) {background-color: darken($bloque3_color, 20)};    
-    div1 div:nth-child(4) {background-color: darken($bloque3_color, 10)};
-    div1 div:nth-child(5) {background-color: darken($bloque3_color, 0)};
-    div2 div:nth-child(1) {background-color: lighten($bloque3_color, 10)};
-    div2 div:nth-child(2) {background-color: lighten($bloque3_color, 20)};
-    div2 div:nth-child(3) {background-color: lighten($bloque3_color, 30)};
-    div2 div:nth-child(4) {background-color: lighten($bloque3_color, 40)}
+block3 {
+    @include mixins-block($block_color: blue);
 }
 
 
