@@ -1,4 +1,4 @@
-@import "tema_1";
+@import "tema_2";
 
 body {
     font: {
@@ -7,6 +7,8 @@ body {
     }
 }
 
+// Probar con Mixins
+
 .container {
     height: 600px;
     width: 200px;
@@ -14,7 +16,6 @@ body {
         left: 50px;
         top: 50px;
     }
-    display: grid;   
 }
 
 .box {
@@ -35,26 +36,9 @@ body {
 $color_important: darken($color_base, 20%);
 $color_warning: lighten($color_base, 20%);
 
-.container :nth-child(1) {
-    background-color: $color_base;
-}
-
-.container :nth-child(2) {
-    background-color: $color_important;
-}
-
-.container :nth-child(3) {
-    background-color: $color_warning;
-}
-
-.container :nth-child(4) {
-    font-family: $principal_font;
-}
-
-.container :nth-child(5) {
-    font-family: $secondary_font;
-}
-
-.container :nth-child(6) {
-    box-shadow: -12px 15px 13px 3px rgb(40, 40, 40);
-}
+.container :nth-child(1) {background-color: $color_base}
+.container :nth-child(2) {background-color: $color_important}
+.container :nth-child(3) {background-color: $color_warning}
+.container :nth-child(4) {font-family: $principal_font}
+.container :nth-child(5) {font-family: $secondary_font}
+.container :nth-child(6) {box-shadow: -12px 15px 13px 3px rgb(40, 40, 40)}

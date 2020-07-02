@@ -25,10 +25,9 @@ body {
 
 .nav {
     width: 100%;
-    float: right;   /* Si no añado esta linea aparece una linea en blaco entre cab y nav. No veo el por qué */
     font-family: verdana;
     font-size: 10px;
-    display: inline-flex;
+    display: flex;
 }
 
 .nav div {
@@ -50,7 +49,7 @@ body {
     .cab :nth-child(2) {display: none;}
 
     .nav {
-        display: flexbox;   /* No consigo que el pie pase a ser dos lineas cuando el ancho es desbordado */
+        display: flexbox;   /* Buscar flexbox wrap*/
         flex-direction: row;
         position: fixed;
         bottom: 0px;
