@@ -49,7 +49,7 @@ body {
     .cab :nth-child(2) {display: none;}
 
     .nav {
-        display: flexbox;   /* Buscar flexbox wrap*/
+        display: flex;   /* Buscar flexbox wrap*/
         flex-direction: row;
         position: fixed;
         bottom: 0px;
