@@ -11,7 +11,7 @@
   "author": "Rosendo Jiménez",
   "license": "ISC",
   "dependencies": {
-    "parcel": "^1.12.4"
+    "parcel": "^2.8.2"
   },
   "devDependencies": {
     "sass": "^1.26.3"
